@@ -1,5 +1,5 @@
-package sqlitedriver
+package mysqldriver
 
-import _ "modernc.org/sqlite"
+import _ "github.com/go-sql-driver/mysql"
 
 var IsUsed = false
