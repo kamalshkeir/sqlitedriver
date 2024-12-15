@@ -3,11 +3,11 @@ package sqlitedriver
 import (
 	"database/sql/driver"
 
-	"modernc.org/sqlite"
+	"github.com/mattn/go-sqlite3"
 )
 
 var Used bool
-var cd = sqlite.Driver{}
+var cd = sqlite3.SQLiteDriver{}
 
 func Use() driver.Driver {
 	Used = true
